@@ -1,0 +1,16 @@
+.dsn{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+#appear{
+    visibility: hidden;  /* Initially hide the element */
+    opacity: 0;          /* Make the element invisible */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Smooth transition for opacity */
+}
+.dsn:hover + #appear{
+    visibility: visible;  /* Make the element visible */
+    opacity: 1;           /* Fully visible */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0s; /* Instant visibility change */
+}
